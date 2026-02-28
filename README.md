@@ -1,6 +1,6 @@
 Multi-Object Video Segmentation with SAM 2
 
-🚀 A next-generation, prompt-driven segmentation system powered by Segment Anything Model 2 (SAM 2) for accurate multi-object image and video understanding.
+A next-generation, prompt-driven segmentation system powered by Segment Anything Model 2 (SAM 2) for accurate multi-object image and video understanding.
 
 🌟 Project Overview
 
@@ -10,7 +10,7 @@ This project implements an interactive multi-object segmentation and tracking sy
 
 🎥 Tracking objects across video frames
 
-🔁 Maintaining object identity and temporal consistency
+🔁 Maintaining object identity & temporal consistency
 
 🚫 Working without task-specific retraining
 
@@ -20,7 +20,7 @@ Unlike traditional CNN-based models that process frames independently, this syst
 
 💾 Streaming memory for video consistency
 
-Resulting in smooth, stable, and high-quality segmentation.
+✅ Resulting in smooth, stable, and high-quality segmentation.
 
 🔥 Why This Project Matters
 
@@ -47,15 +47,10 @@ By integrating SAM 2’s memory-augmented transformer architecture, this project
 ✨ Core Capabilities
 
 ✔ Prompt-based segmentation (points, bounding boxes, masks)
-
 ✔ Multi-object tracking across video frames
-
 ✔ Streaming memory for temporal stability
-
 ✔ High-quality pixel-level mask generation
-
 ✔ No retraining required for unseen objects
-
 ✔ Near real-time performance
 
 🧠 System Architecture
@@ -107,18 +102,15 @@ Generate pixel-level segmentation masks
 
 Initialize object in the first frame using a prompt
 
-The memory module stores object features
+Memory module stores object features
 
 Objects are tracked consistently across frames
 
 📊 Performance Highlights
 
 🎯 Accurate object boundary detection
-
 🔁 Strong temporal consistency
-
 🧩 Reduced identity switching
-
 📦 Supports multiple objects simultaneously
 
 Input Type	Objects	Temporal Stability	Output Quality
@@ -137,10 +129,10 @@ requirements.txt
 
 This project demonstrates how transformer-based segmentation with streaming memory overcomes the limitations of traditional models, enabling:
 
-Accurate segmentation
+🎯 Accurate segmentation
 
-Temporal consistency
+🔁 Temporal consistency
 
-Scalable multi-object tracking
+📈 Scalable multi-object tracking
 
-Real-time performance
+⚡ Near real-time performance
