@@ -1,42 +1,48 @@
 Multi-Object Video Segmentation with SAM 2
 
-A next-generation, prompt-driven segmentation system powered by Segment Anything Model 2 (SAM 2) for accurate multi-object image and video understanding.
+🚀 A next-generation, prompt-driven segmentation system powered by Segment Anything Model 2 (SAM 2) for accurate multi-object image and video understanding.
 
-🌟 Overview
+🌟 Project Overview
 
 This project implements an interactive multi-object segmentation and tracking system capable of:
 
-Detecting multiple objects in images
+🔍 Detecting multiple objects in images
 
-Tracking them across video frames
+🎥 Tracking objects across video frames
 
-Maintaining object identity and temporal consistency
+🔁 Maintaining object identity and temporal consistency
 
-Working without task-specific retraining
+🚫 Working without task-specific retraining
 
-Unlike traditional CNN-based models that process frames independently, this system leverages transformer-based global context modeling and streaming memory to achieve smooth and stable segmentation in videos.
+Unlike traditional CNN-based models that process frames independently, this system leverages:
+
+🧠 Transformer-based global context modeling
+
+💾 Streaming memory for video consistency
+
+Resulting in smooth, stable, and high-quality segmentation.
 
 🔥 Why This Project Matters
 
-Traditional segmentation systems often suffer from:
+Traditional segmentation approaches often face:
 
-Flickering masks
+❌ Flickering masks
 
-Loss of object identity
+❌ Identity switching
 
-Poor temporal stability
+❌ Poor temporal stability
 
-Heavy retraining requirements
+❌ Heavy retraining requirements
 
-By integrating SAM 2’s memory-augmented transformer architecture, this project enables reliable real-time segmentation suitable for:
+By integrating SAM 2’s memory-augmented transformer architecture, this project enables reliable segmentation suitable for:
 
-📹 Surveillance systems
+📹 Surveillance Systems
 
-🤖 Autonomous systems
+🤖 Autonomous Systems
 
-🎬 Video analytics
+🎬 Video Analytics
 
-🛰️ Real-time monitoring applications
+🛰️ Real-Time Monitoring Applications
 
 ✨ Core Capabilities
 
@@ -44,7 +50,7 @@ By integrating SAM 2’s memory-augmented transformer architecture, this project
 
 ✔ Multi-object tracking across video frames
 
-✔ Streaming memory for temporal consistency
+✔ Streaming memory for temporal stability
 
 ✔ High-quality pixel-level mask generation
 
@@ -54,7 +60,7 @@ By integrating SAM 2’s memory-augmented transformer architecture, this project
 
 🧠 System Architecture
 
-The system consists of four primary components:
+The system consists of four main components:
 
 🔹 Vision Transformer (ViT) Encoder
 
@@ -62,11 +68,11 @@ Extracts deep feature representations with global context awareness.
 
 🔹 Prompt Encoder
 
-Encodes user inputs (clicks, bounding boxes, masks) into embedding representations.
+Encodes user inputs (clicks, bounding boxes, masks) into embeddings.
 
 🔹 Streaming Memory Module
 
-Stores object features across video frames to ensure consistent tracking.
+Stores object features across video frames to maintain identity consistency.
 
 🔹 Mask Decoder
 
@@ -74,12 +80,12 @@ Generates segmentation masks along with IoU confidence scores.
 
 🛠 Technology Stack
 Category	Tools Used
-Language	Python 3.10+
-Framework	PyTorch
-Libraries	OpenCV, NumPy, Matplotlib, TorchVision
-Model	SAM 2 (Pretrained)
-Environment	Google Colab / Jupyter Notebook
-Hardware	NVIDIA GPU (Recommended)
+🐍 Language	Python 3.10+
+🔥 Framework	PyTorch
+📚 Libraries	OpenCV, NumPy, Matplotlib, TorchVision
+🤖 Model	SAM 2 (Pretrained)
+💻 Environment	Google Colab / Jupyter Notebook
+⚡ Hardware	NVIDIA GPU (Recommended)
 🚀 Getting Started
 1️⃣ Clone the Repository
 git clone https://github.com/your-username/your-project-name.git
@@ -88,7 +94,7 @@ cd your-project-name
 pip install torch torchvision opencv-python numpy matplotlib
 3️⃣ Download SAM 2
 git clone https://github.com/facebookresearch/sam2.git
-🧪 Usage
+🧪 Usage Guide
 📷 Image Segmentation
 
 Load an image
@@ -99,7 +105,7 @@ Generate pixel-level segmentation masks
 
 🎥 Video Segmentation & Tracking
 
-Initialize the object on the first frame using a prompt
+Initialize object in the first frame using a prompt
 
 The memory module stores object features
 
@@ -123,10 +129,18 @@ sam2/               # Core SAM 2 framework
 notebooks/          # Experiment notebooks
 SA_V dataset/       # Dataset files
 SAM2/               # Model integration scripts
-training/           # Training / evaluation scripts
+training/           # Training & evaluation scripts
 tools/              # Utility tools and outputs
 README.md
 requirements.txt
 🏁 Conclusion
 
-This project demonstrates how transformer-based segmentation with streaming memory overcomes the limitations of traditional models, enabling accurate, temporally consistent, and scalable multi-object video understanding.
+This project demonstrates how transformer-based segmentation with streaming memory overcomes the limitations of traditional models, enabling:
+
+Accurate segmentation
+
+Temporal consistency
+
+Scalable multi-object tracking
+
+Real-time performance
