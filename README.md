@@ -1,52 +1,60 @@
 <div align="center">
-🚀 Multi-Object Video Segmentation with SAM 2
-Prompt-Driven • Transformer-Based • Memory-Augmented • Real-Time
-<img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python" /> <img src="https://img.shields.io/badge/PyTorch-Deep%20Learning-red?style=for-the-badge&logo=pytorch" /> <img src="https://img.shields.io/badge/Model-SAM2-green?style=for-the-badge" /> <img src="https://img.shields.io/badge/GPU-Recommended-orange?style=for-the-badge&logo=nvidia" /> </div>
-✨ Overview
 
-This project implements an interactive multi-object segmentation and tracking system powered by Segment Anything Model 2 (SAM 2).
+# 🚀 Multi-Object Video Segmentation using SAM 2
 
-It enables:
+### 🧠 Transformer-Based • 💾 Memory-Augmented • 🎯 Prompt-Driven • ⚡ Real-Time
 
-🔍 Accurate multi-object image segmentation
+<br>
 
-🎥 Stable tracking across video frames
+<img src="https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python"/>
+<img src="https://img.shields.io/badge/PyTorch-DeepLearning-red?style=flat-square&logo=pytorch"/>
+<img src="https://img.shields.io/badge/Model-SAM2-green?style=flat-square"/>
+<img src="https://img.shields.io/badge/GPU-NVIDIA-orange?style=flat-square&logo=nvidia"/>
 
-🔁 Temporal consistency with streaming memory
+</div>
 
-🚫 Zero retraining for unseen objects
+---
 
-Unlike traditional CNN-based models, this system uses:
+## 📌 Project Overview
 
-🧠 Transformer-based global feature modeling
+> An interactive **multi-object segmentation and tracking system** powered by **Segment Anything Model 2 (SAM 2)**.
 
-💾 Streaming memory for cross-frame consistency
+This project enables:
 
-Result: Smooth, stable, high-quality segmentation in images and videos
+| Capability | Description |
+|------------|------------|
+| 🔍 Multi-Object Detection | Detect multiple objects in images |
+| 🎥 Video Tracking | Track objects consistently across frames |
+| 🔁 Temporal Stability | Maintain object identity using memory |
+| 🚫 Zero Retraining | Works on unseen objects without retraining |
 
-🔥 Why This Project Stands Out
+---
 
-Traditional segmentation models suffer from:
+## ❗ Problems with Traditional Models
 
-❌ Flickering masks
+Traditional CNN-based segmentation systems suffer from:
 
-❌ Identity switching
+- ❌ Flickering masks  
+- ❌ Identity switching  
+- ❌ Frame-by-frame inconsistency  
+- ❌ Heavy retraining requirements  
 
-❌ Frame-by-frame inconsistency
+---
 
-❌ Heavy retraining needs
+## ✅ How This Project Solves It
 
-This project solves those using memory-augmented transformer architecture, making it suitable for:
+| Traditional Approach | Our Approach |
+|----------------------|--------------|
+| Frame-by-frame processing | Transformer-based global modeling |
+| No temporal memory | Streaming memory module |
+| Frequent identity loss | Persistent object embeddings |
+| Task-specific training | Prompt-driven zero-shot segmentation |
 
-📹 Surveillance Systems
+---
 
-🤖 Autonomous Systems
+## 🧠 System Architecture
 
-🎬 Video Analytics
-
-🛰️ Real-Time Monitoring
-
-🧠 System Architecture
+```
 Input Frame + Prompt
         ↓
 Vision Transformer Encoder
@@ -57,89 +65,116 @@ Streaming Memory Module
         ↓
 Mask Decoder
         ↓
-Segmentation Masks + IoU Score
-🔹 Vision Transformer (ViT)
+Segmentation Mask + IoU Score
+```
 
-Extracts deep global contextual features.
+### 🔹 Architecture Components
 
-🔹 Prompt Encoder
+| Component | Role |
+|-----------|------|
+| **Vision Transformer (ViT)** | Extracts global contextual features |
+| **Prompt Encoder** | Converts clicks/boxes into embeddings |
+| **Streaming Memory** | Maintains cross-frame object identity |
+| **Mask Decoder** | Generates high-quality pixel masks |
 
-Converts clicks, boxes, or masks into embeddings.
+---
 
-🔹 Streaming Memory
+## 🎯 Core Features
 
-Stores object features across frames for identity preservation.
+- ✔ Prompt-based segmentation (points, boxes, masks)
+- ✔ Multi-object tracking across videos
+- ✔ High-quality pixel-level masks
+- ✔ Strong temporal consistency
+- ✔ Near real-time inference
+- ✔ No retraining required
 
-🔹 Mask Decoder
+---
 
-Generates pixel-level masks with confidence scores.
+## 🛠 Tech Stack
 
-🎯 Core Features
+| Category | Technology |
+|----------|------------|
+| 🐍 Language | Python 3.10+ |
+| 🔥 Framework | PyTorch |
+| 🤖 Model | SAM 2 (Pretrained) |
+| 📚 Libraries | OpenCV, NumPy, Matplotlib |
+| 💻 Environment | Google Colab / Jupyter |
+| ⚡ Hardware | NVIDIA GPU Recommended |
 
-✔ Prompt-based segmentation
+---
 
-✔ Multi-object tracking
+## 🚀 Installation
 
-✔ Streaming memory consistency
-
-✔ High-quality mask generation
-
-✔ Works on unseen objects
-
-✔ Near real-time inference
-
-🛠 Tech Stack
-Category	Technology
-Language	Python 3.10+
-Framework	PyTorch
-Model	SAM 2 (Pretrained)
-Libraries	OpenCV, NumPy, Matplotlib
-Environment	Colab / Jupyter
-Hardware	NVIDIA GPU
-🚀 Installation
+### 1️⃣ Clone Repository
+```bash
 git clone https://github.com/your-username/your-project-name.git
 cd your-project-name
-pip install -r requirements.txt
+```
 
-Download SAM 2:
+### 2️⃣ Install Dependencies
+```bash
+pip install torch torchvision opencv-python numpy matplotlib
+```
 
+### 3️⃣ Download SAM 2
+```bash
 git clone https://github.com/facebookresearch/sam2.git
-🧪 Usage
-📷 Image Segmentation
+```
 
-Load image
+---
 
-Provide prompt (point / box / mask)
+## 🧪 Usage
 
-Generate segmentation mask
+### 📷 Image Segmentation
+1. Load image  
+2. Provide prompt (point / box / mask)  
+3. Generate segmentation mask  
 
-🎥 Video Segmentation
+### 🎥 Video Segmentation
+1. Initialize object in first frame  
+2. Memory stores object features  
+3. Objects tracked across frames  
 
-Initialize object in first frame
+---
 
-Memory module stores features
+## 📊 Performance Summary
 
-Objects tracked across frames
+| Input Type | Multi-Object | Temporal Stability | Output Quality |
+|------------|-------------|-------------------|----------------|
+| Image | ✅ Yes | N/A | High |
+| Video | ✅ Yes | High | Stable & Smooth |
 
-📊 Performance
-Input	Multi-Object	Temporal Stability	Output Quality
-Image	✅	N/A	High
-Video	✅	High	Stable & Smooth
-📂 Project Structure
-sam2/               # Core framework
+---
+
+## 📂 Project Structure
+
+```
+sam2/               # Core SAM2 framework
 notebooks/          # Experiments
-dataset/            # Data
+dataset/            # Dataset files
 integration/        # Model integration
 training/           # Evaluation scripts
 tools/              # Utilities
-🏁 Conclusion
+README.md
+requirements.txt
+```
 
-This project demonstrates how transformer-based segmentation with streaming memory overcomes traditional video segmentation limitations, enabling:
+---
 
-🎯 Accurate object boundaries
+## 🏁 Conclusion
 
-🔁 Strong temporal consistency
+This project demonstrates how **Transformer-based segmentation with streaming memory** overcomes traditional video segmentation limitations.
 
-📦 Multi-object scalability
+### 🚀 Enables:
+- 🎯 Accurate object boundaries  
+- 🔁 Strong temporal consistency  
+- 📦 Scalable multi-object tracking  
+- ⚡ Near real-time performance  
 
-⚡ Real-time capable performance
+---
+
+<div align="center">
+
+### ⭐ If you found this project useful, consider giving it a star!
+
+</div>
