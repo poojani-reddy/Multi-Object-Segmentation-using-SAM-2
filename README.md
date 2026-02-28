@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 Multi-Object Video Segmentation using SAM 2
+# Multi-Object Video Segmentation using SAM 2
 
 ### 🧠 Transformer-Based • 💾 Memory-Augmented • 🎯 Prompt-Driven • ⚡ Real-Time
 
@@ -34,10 +34,10 @@ This project enables:
 
 Traditional CNN-based segmentation systems suffer from:
 
-- ❌ Flickering masks  
-- ❌ Identity switching  
-- ❌ Frame-by-frame inconsistency  
-- ❌ Heavy retraining requirements  
+- Flickering masks  
+- Identity switching  
+- Frame-by-frame inconsistency  
+- Heavy retraining requirements  
 
 ---
 
@@ -166,10 +166,10 @@ requirements.txt
 This project demonstrates how **Transformer-based segmentation with streaming memory** overcomes traditional video segmentation limitations.
 
 ### 🚀 Enables:
-- 🎯 Accurate object boundaries  
-- 🔁 Strong temporal consistency  
-- 📦 Scalable multi-object tracking  
-- ⚡ Near real-time performance  
+- Accurate object boundaries  
+- Strong temporal consistency  
+- Scalable multi-object tracking  
+- Near real-time performance  
 
 ---
 
